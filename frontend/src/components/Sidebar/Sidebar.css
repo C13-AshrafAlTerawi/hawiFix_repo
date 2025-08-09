@@ -1,0 +1,122 @@
+.sidebar-with-bg {
+  position: relative;
+  width: 50vw;
+  height: 88vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../../../public/images/saidbar.webp");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px) brightness(40%);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: 44px;
+}
+
+.sidebar-menu .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-menu .menu-item:hover {
+  color: #0058cc;
+}
+.lock-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  pointer-events: all;
+  color: #b3b3b3;
+}
+
+.lock-icon {
+  font-size: 150px;
+  margin-bottom: 10px;
+  transition: transform 0.7s ease;
+}
+
+.lock-icon:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.lock-message {
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: transform 0.7s ease;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.lock-overlay:active {
+  animation: shake 0.1s;
+  color: #675b5b;
+}
+.app-title {
+  font-size: 30px;
+  font-weight: 800;
+  color: #c8c8c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 70px;
+  gap: 12px;
+}
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (max-width: 391px) {
+  .sidebar-with-bg {
+    width: auto;
+    height: auto;
+  }
+}

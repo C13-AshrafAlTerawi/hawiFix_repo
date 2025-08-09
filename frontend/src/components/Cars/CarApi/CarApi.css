@@ -1,0 +1,13 @@
+.car-list-container-api {
+  height: 71vh;
+  margin: 0px;
+}
+.det-from-api {
+  border: 3px solid;
+  border-radius: 17px;
+  padding: 17px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background: #004c97;
+}

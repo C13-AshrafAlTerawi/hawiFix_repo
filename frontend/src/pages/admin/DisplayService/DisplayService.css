@@ -1,0 +1,139 @@
+.service-container-admin-panel {
+  padding: 30px;
+}
+.service-content-admin-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+  justify-content: flex-start;
+}
+.service-card-admin-panel {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  min-height: 250px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  align-items: stretch;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 300px;
+  cursor: pointer;
+}
+.img-div-admin-panel {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.img-from-service-admin-panel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 13px;
+}
+.card-content-admin-panel {
+  flex: 1;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-content-admin-panel h1 {
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.card-content-admin-panel p {
+  margin: 5px 0;
+  display: flex;
+  font-weight: 500;
+}
+
+.service-tools-admin-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.tital-service-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  color: white;
+  background-color: #016fed;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.tital-service-panel-add {
+  position: absolute;
+  right: 47px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.tital-service-panel-add:hover {
+  transform: scale(1.1);
+}
+.delete-service-panel {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007bb5, #00aaff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.delete-service-panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+.edite-service-panel {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #007bb5, #00aaff);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 44%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: sans-serif;
+  font-weight: bold;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+.edite-service-panel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 391px) {
+  .service-container-admin-panel {
+    width: 208%;
+  }
+  .service-content-admin-panel {
+    width: 101%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 58px;
+  }
+
+  .tital-service-panel-add {
+    position: absolute;
+    left: 200%;
+  }
+}

@@ -1,0 +1,138 @@
+.setting-container {
+  height: 89vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.setting-content {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  margin: 33px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.options-container {
+  width: 35%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.5);
+}
+
+.options-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 9px;
+}
+
+.Account-and-Notifaction {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.setting-panel {
+  width: 65%;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.options-content p {
+  font-size: 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 90%;
+  padding: 10px;
+  color: #002e5b;
+}
+
+.options-content p:hover {
+  background-color: #d5d5d5;
+  border-left: 8px solid #5465fa;
+  padding-left: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.useIcon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+  flex-direction: column;
+  align-items: center;
+  color: #383838;
+  cursor: pointer;
+}
+.useIcon h2 {
+  color: #305472;
+  font-family: revert;
+  font-weight: 800;
+  margin: 0px;
+  font-size: 31px;
+}
+.useIcon svg {
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.Account-and-Notifaction p {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #3578d1;
+}
+
+.notification-description {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+  margin-top: 20px;
+}
+.info-message {
+  font-size: 18px;
+  color: #6d6d6d;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 100%;
+  line-height: 1.5;
+  display: block;
+}
+@media (max-width: 391px) {
+  .setting-container {
+    width: 221%;
+    display: flex;
+    margin-bottom: 86%;
+  }
+  .setting-content {
+    margin-top: 212px;
+  }
+  .user-field {
+    width: 105%;
+  }
+  .update-content {
+    max-width: 104%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 18px;
+  }
+}

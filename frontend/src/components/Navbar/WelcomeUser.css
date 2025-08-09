@@ -1,0 +1,136 @@
+.WelcomeUser {
+  display: flex;
+  gap: 2px;
+}
+.WelcomeUser:hover {
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 21px;
+  margin-bottom: 25px;
+  width: 295px;
+  margin-top: 23px;
+}
+
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.userEmail {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+.dropdownMenu {
+  background-color: #f5f6fa;
+  display: flex;
+  flex-direction: column;
+  width: 309px;
+  height: 253px;
+  align-items: flex-start;
+  padding: 10px;
+  position: fixed;
+  top: 84px;
+  right: 5px;
+  border: 1px solid #787870;
+  z-index: 4000;
+}
+.Setting {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  margin-bottom: 35px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.others {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 3px;
+}
+.menuItem {
+  margin-bottom: 17px;
+  text-decoration: none;
+  font-family: none;
+  color: black;
+  font-family: system-ui;
+  font-weight: 700;
+  transition: color 0.1s ease;
+}
+.menuItem:hover {
+  color: #676767;
+}
+
+.dropdown-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+.dropdown-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.dropdown-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms, transform 300ms;
+}
+.tt {
+  display: flex;
+  justify-content: space-between;
+}
+.logotContent {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 9px;
+  margin-left: 7px;
+  color: rgb(33, 33, 33);
+  transition: transform 0.5s ease, color 0.5s ease;
+}
+.logotContent:hover {
+  cursor: pointer;
+  color: rgb(86, 86, 86);
+}
+.logoutBtn {
+  font-size: 12px;
+  font-weight: 700;
+}
+.closeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.closeContent {
+  color: rgb(33, 33, 33);
+  transition: transform 0.5s ease, color 0.5s ease;
+  /* gap: 7px; */
+}
+.closeContent:hover {
+  cursor: pointer;
+  color: rgb(86, 86, 86);
+}
+.closeBtn {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 0px;
+}

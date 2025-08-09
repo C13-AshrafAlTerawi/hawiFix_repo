@@ -1,0 +1,68 @@
+.navbar {
+  background: linear-gradient(45deg, #007bff, #2a2a2a);
+  color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 0 30px;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  list-style: none;
+  margin-right: 45px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navLinks li {
+  transition: transform 0.3s ease;
+}
+
+.navLinks li:hover {
+  color: #7a7c7d;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.logoImg {
+  width: 57px;
+  height: 43px;
+}
+.notification {
+  display: flex;
+  gap: 7px;
+}
+
+.aboutUs {
+  display: flex;
+  gap: 7px;
+}
+.admin-dashboard {
+  display: flex;
+  gap: 7px;
+}
+.admin-dashboard:hover {
+  color: #4a4a4a;
+  cursor: pointer;
+}
+@media (max-width: 391px) {
+  .navbar {
+    max-width: 860px;
+    width: 860px;
+    min-width: 860px;
+  }
+}

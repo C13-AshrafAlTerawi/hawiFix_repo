@@ -1,0 +1,35 @@
+.no-token-message-container {
+  background-color: #f4f6f9;
+  color: #333;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-token-message-container h2 {
+  font-size: 2em;
+  color: #f70000;
+  margin-bottom: 20px;
+}
+
+.no-token-message-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #070505;
+}
+
+.no-token-message-container .login-link {
+  font-size: 1.2em;
+  color: #007bfffc;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.no-token-message-container .login-link:hover {
+  text-decoration: underline;
+  color: #4c6a8afc;
+}

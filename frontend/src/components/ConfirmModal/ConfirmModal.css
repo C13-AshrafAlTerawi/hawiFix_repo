@@ -1,0 +1,82 @@
+.modalOverlay {
+  z-index: 9999;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 52px;
+  border: 1px solid #817e7e;
+  width: 28%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  color: #414141;
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 22px;
+  flex-direction: column;
+}
+
+.modalBody {
+  font-family: system-ui;
+  color: #7a7878;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.ConfirmBtn {
+  width: 207px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #0068cc;
+  color: white;
+  font-family: system-ui;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.CancelBtn {
+  width: 120px;
+  padding: 10px;
+  border-radius: 3px;
+  background: #ff2121;
+  color: white;
+  font-family: system-ui;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ConfirmBtn:hover {
+  background: #034079;
+}
+
+.CancelBtn:hover {
+  background: #c80000;
+}

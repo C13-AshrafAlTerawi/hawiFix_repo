@@ -1,0 +1,143 @@
+.car-list-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 99vw;
+  height: 89vh;
+  background-color: #f5f5f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car-api {
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.3), 0px 4px 6px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  background: #0058cc;
+}
+
+.car-list-content {
+  background-color: #f5f5f5;
+  width: 60vw;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.car-item {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 23px;
+  width: 50%;
+  height: 50%;
+  max-width: 700px;
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
+  color: #333;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.car-item:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.car-img {
+  width: 181px;
+  height: 310px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.car-ditels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.brand-and-model {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.plate-number {
+  font-size: 0.95rem;
+  color: #555;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.car-brand {
+  font-size: 1.1rem;
+  color: #b30000;
+  font-weight: bold;
+}
+.taital-modal-content {
+  margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 154px;
+  border-radius: 44px;
+  height: 78px;
+  margin-right: 3px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1), 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+.Add-from-modal:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.Add-from-modal {
+  margin-right: 11px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.welcome-taital-modal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (max-width: 391px) {
+  .car-list-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 850px;
+  }
+  .car-api {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  .car-list-content {
+    width: auto;
+  }
+}

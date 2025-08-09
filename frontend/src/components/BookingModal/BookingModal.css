@@ -1,0 +1,112 @@
+.booking-modal-content {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 70%;
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+#add-booking-from {
+  display: flex;
+  flex-direction: column;
+  width: 59%;
+  margin-left: 36px;
+  padding: 40px;
+  gap: 16px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 28px;
+}
+
+#add-booking-from select,
+#add-booking-from input[type="text"],
+.date-input,
+.time-input {
+  background-color: #f7f7f7;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: #333;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+#add-booking-from select:focus,
+#add-booking-from input:focus,
+.date-input:focus,
+.time-input:focus {
+  border-color: #016fed;
+  outline: none;
+  background-color: #fff;
+}
+
+#add-booking-from .note-inbut {
+  height: 157px;
+  font-size: medium;
+  text-align: center;
+}
+
+.img-add-booking {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.img-add-booking-content {
+  border-right: 2px solid #aaaaaa;
+  width: 45%;
+}
+
+.add-booking-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 117px;
+  align-items: flex-end;
+}
+
+#add-booking-btn,
+#cancel-btn {
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-family: sans-serif;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#add-booking-btn {
+  background: linear-gradient(45deg, #016fed, #0188ff);
+  display: flex;
+}
+
+#add-booking-btn:hover {
+  background: #0160d8;
+}
+
+#cancel-btn {
+  background: linear-gradient(45deg, #fa0505, #ff3b3b);
+}
+
+#cancel-btn:hover {
+  background: #c30000;
+}
+@media (max-width: 391px) {
+  .booking-modal-content {
+    height: 36%;
+    width: 87%;
+  }
+  .img-add-booking {
+    width: 95%;
+    height: 100%;
+  }
+}

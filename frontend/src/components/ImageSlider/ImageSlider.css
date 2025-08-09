@@ -1,0 +1,108 @@
+.backgraund {
+  filter: blur(0px) brightness(90%);
+  position: relative;
+  z-index: 0;
+  width: 60vw;
+  height: 88vh;
+  overflow: hidden;
+}
+
+.sliderOverlayText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.welcomeText {
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.loginReminder {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: white;
+}
+
+.sliderContainer {
+  position: relative;
+  top: 0px;
+  width: 60vw;
+  height: 88vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.mySlide {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.slideImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  filter: brightness(0.8) contrast(1.1);
+  z-index: 0;
+  transition: transform 0.3s ease;
+  filter: blur(1px);
+  background-position: center;
+}
+
+.slideImage:hover {
+  transform: scale(1.004);
+}
+.sginIn-or-logIn-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  font-family: revert;
+  font-weight: 800;
+  padding: 7px;
+  height: 54px;
+  background: #007bff;
+  color: #ffffff;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+  width: 224px;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 1.4);
+}
+.sginIn-or-logIn-btn:hover {
+  background-color: #013a77;
+  transform: scale(1.03);
+  box-shadow: none;
+}
+
+@media (max-width: 391px) {
+  .sliderContainer {
+    width: auto;
+    height: auto;
+  }
+
+  .mySlide {
+    object-fit: cover;
+    object-position: center center;
+    height: 500px;
+    width: auto;
+  }
+  .backgraund {
+    height: auto;
+    width: auto;
+  }
+}

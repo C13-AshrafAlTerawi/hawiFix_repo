@@ -1,0 +1,140 @@
+.footer-container {
+  background: linear-gradient(to right, #0a0f1a, #0a0f1a, #000000);
+  padding: 13px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 40px;
+  height: auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-content > div {
+  flex: 1;
+  min-width: 250px;
+  padding: 0 20px;
+}
+
+.Quick-links {
+  border-right: 2px solid rgb(86, 86, 86);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+.Quick-links h1,
+.discrebtion-content h1,
+.connect-info h1 {
+  font-size: 19px;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: #eeeeee;
+  margin-bottom: 15px;
+}
+.Quick-links p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #aaaaaa;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.Quick-links p:hover {
+  color: #4f4f4f;
+}
+
+.discrebtion-content {
+  border-right: 2px solid rgb(86, 86, 86);
+  text-align: center;
+}
+.discrebtion-content p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #aaaaaa;
+  line-height: 1.6;
+}
+
+.connect-info p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.connect-info p:hover {
+  color: #4f4f4f;
+}
+.FollowUs-container {
+  display: flex;
+  flex-direction: row;
+  color: #eeeeee;
+  padding: 3px;
+  align-items: center;
+}
+.FollowUs-content {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 67px;
+  width: 19%;
+}
+.designer-content {
+  color: #aaaaaa;
+}
+.FollowUs-content img {
+  width: 22px;
+  height: 22px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.FollowUs-content img:hover {
+  transform: scale(1.08);
+}
+.Social-Media-img-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.designer-name {
+  color: #b0931e;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: none;
+  cursor: pointer;
+}
+@media (max-width: 391px) {
+  .footer-container {
+    width: 835px;
+    height: 749px;
+  }
+  .footer-content {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Quick-links {
+    border-right: none;
+    display: flex;
+    align-items: center;
+  }
+  .discrebtion-content {
+    border-right: none;
+  }
+  .FollowUs-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .FollowUs-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: auto;
+    margin-top: 21px;
+  }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 391px) {
+  .tt {
+    display: flex;
+    flex-direction: column;
+    width: 862px;
+    height: 1002px;
+  }
+}

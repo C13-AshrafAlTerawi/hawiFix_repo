@@ -1,0 +1,6 @@
+.close-service-update-modal {
+  transition: transform 0.3s ease;
+}
+.close-service-update-modal:hover {
+  transform: scale(1.2);
+}
